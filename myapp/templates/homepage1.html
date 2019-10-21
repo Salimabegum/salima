@@ -1,0 +1,11 @@
+{{details}}
+{{details.nmae}}
+{{details.description}}
+{{details.cost}}
+{{details.no_of_product}}
+<form method="POST" action="{% url 'homepage1' details.id %}">
+	{% csrf_token %}
+	<label>Email:</label><br>
+	<input type="text" name="email"><br><br>
+	<input type="submit" name="buynow">
+</form>

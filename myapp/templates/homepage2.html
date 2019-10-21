@@ -1,0 +1,3 @@
+{% for i in details %}
+	{{i.Username}}&nbsp;&nbsp;&nbsp;&nbsp;{{i.email}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{i.mobile}}&nbsp;&nbsp;&nbsp;{{i.Account_blnc}}<a href="{% url 'destroy' id=i.id %}">delete</a><br>
+{% endfor %}

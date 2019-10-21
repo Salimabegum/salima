@@ -1,0 +1,6 @@
+<!-- {{details}} -->
+{% for i in details %}
+	<a href="{% url 'homepage1' id=i.id %}">{{i.name}}</a>&nbsp;&nbsp;&nbsp;<a href="{% url 'dest' id=i.id %}">delete</a><br>
+{% endfor %}
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Product_field</h2>
+
+<form method="POST">
+	{% csrf_token %}
+  name:<br>
+  <input type="text" name="name" value="">
+  <br>
+  description:<br>
+  <input type="text" name="description" value=""><br>
+  
+  cost:<br>
+  <input type="text" name="cost" value="">
+  <br>
+  no_of_product:<br>
+  <input type="text" name="no_of_product" value="">
+  <br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
